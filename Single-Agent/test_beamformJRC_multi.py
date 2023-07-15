@@ -116,8 +116,7 @@ class Beamform_JRC(gym.Env):
         self.v = 15     # 14 m/s
         self.v_diff = 7.5
         self.noise = 0.0007     # standard variation of noise (sigma)
-        self.ob_time = env_config['ob_time']
-        
+        self.ob_time = False         
         ''' env dimensions '''
         self.max_x_dim = env_config['x_dim']    # length of road
         self.min_x = 0
